@@ -26,7 +26,7 @@ Requirements:
 
     - ts-node (tega)
 
-    - typescript (bintohex)
+    - typescript (bintohex, tega)
 
 To build save-dumper.gb
 
