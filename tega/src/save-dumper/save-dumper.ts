@@ -1,4 +1,4 @@
-import { BTN_START, LCDCF_BGON, LCDCF_OBJON, LCDCF_ON, P1F_GET_BTN, RAM, RAMBANK, rLCDC, rLY, rP1, rSB, rSC, SCF_SOURCE, SCF_START } from "../hardware-inc";
+import { BTN_START, LCDCF_BGON, LCDCF_OBJON, LCDCF_ON, P1F_GET_BTN, RAM, BANKSET, rLCDC, rLY, rP1, rSB, rSC, SCF_SOURCE, SCF_START } from "../hardware-inc";
 import { AND, CALL, CP, DEC, DI, JP, LD, OR, XOR, INC } from "../ops";
 import { call_memcpy, if_neq } from "../std";
 import { Flag, Reg16, Reg16Ptr, Reg8 } from "../types";
@@ -64,7 +64,7 @@ export const dumpBytesOverSerial = fn('dumpBytesOverSerial', () => [
     if_neq(Reg8.L, u8(0x04), {
       then: [
         LD(Reg8.A, Reg8.L),
-        LD(addr(RAMBANK), Reg8.A),
+        LD(addr(BANKSET), Reg8.A),
         LD(Reg16.BC, u16(0x2000)),
         JP(label('loop1')),
       ]
