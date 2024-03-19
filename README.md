@@ -11,7 +11,7 @@ Francis Stokes - https://github.com/francisrstokes
 Tega Base Repo - https://github.com/francisrstokes/tega
 
 ## Save Dumper
-_ Inside \tega\src\save-dumper
+- Inside \tega\src\save-dumper
 The modified save dumper to extract the save file from real cartridges over the link port.
 
 ## Bin to Hex
@@ -34,7 +34,7 @@ To build save-dumper.gb
 
 To run bintohex
 
-    - run tsc bintohex.ts then node bintohex.js input.txt output.sav where the input.txt is the output from the Game Boy
+    - run tsc bintohex.ts then node bintohex.js input.txt output.sav; where the input.txt is the output from the Game Boy
 
 ## Credts
 Tega, Base Save Dumper Code - Francis Stokes (https://github.com/francisrstokes)
