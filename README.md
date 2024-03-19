@@ -24,17 +24,17 @@ Any way of reading raw binary will work however.
 ## How to install
 Requirements:
 
-    _ ts-node (tega)
+    - ts-node (tega)
 
-    _ typescript (bintohex)
+    - typescript (bintohex)
 
 To build save-dumper.gb
 
-    _ run ts-node index.ts in the save-dumper folder
+    - run ts-node index.ts in the save-dumper folder
 
 To run bintohex
 
-    _ run tsc bintohex.ts then node bintohex.js input.txt output.sav where the input.txt is the output from the Game Boy
+    - run tsc bintohex.ts then node bintohex.js input.txt output.sav where the input.txt is the output from the Game Boy
 
 ## Credts
 Tega, Base Save Dumper Code - Francis Stokes (https://github.com/francisrstokes)
