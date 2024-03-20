@@ -16,8 +16,8 @@ export const OAMRAM = 0xFE00;
 export const IO = 0xFF00;
 export const AUD3WAVERAM = 0xFF30;
 export const HRAM = 0xFF80;
-export const BANKSET = 0x4000;
-export const BANKMAX = 0x03;
+export const RAMBANKSET = 0x4000;
+export const ROMBANKSET = 0x2000;
 
 export const rP1 = 0xFF00;
 
