@@ -7,9 +7,9 @@ import { CALL, JP, LD, XOR } from '../ops';
 import { memcpy } from '../std';
 import { AssemblerOperation, Reg8 } from "../types";
 import { addr } from '../utils';
-import { copyFunctionsToRAM, dumpROM, romDumperFunctions } from './save-dumper';
+import { copyFunctionsToRAM, dumpROM, romDumperFunctions } from './rom-dumper';
 
-const ROM_NAME = 'Save_Dump';
+const ROM_NAME = 'ROM_Dump';
 const BUILD_PATH = path.join(__dirname, 'build');
 
 const program: AssemblerOperation[] = [
